@@ -21,9 +21,10 @@ locals {
   name_prefix = "${var.kortnavn}-${var.project}"
 
   common_tags = {
-    owner  = var.kortnavn
-    course = "iac"
-    module = "modul7"
+    owner      = var.kortnavn
+    course     = "iac"
+    module     = "modul7"
+    managed_by = "pipeline"
   }
 }
 
